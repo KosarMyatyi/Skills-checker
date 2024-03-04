@@ -1,3 +1,5 @@
+import { ReactNode } from "react";
+
 export interface Product {
   brand: string | null;
   id: string; 
@@ -29,14 +31,12 @@ export interface APIParams {
 
 export interface ItemsParams {
   ids: string[];
-  // не должен быть здесь
   field: string;
 }
 
 export interface IdsParams {
   offset: number;
   limit: number;
-  // не должен быть здесь
   field: string;
 }
 
@@ -51,7 +51,7 @@ export interface FilterParams {
 }
 
 export interface Header {
-  width?: number | string;
+  width: number | string;
   head: string;
 }
 
@@ -76,6 +76,11 @@ export interface ResponseProductFilter {
   searchValue: string;
   selectedField: string;
   result: string[];
+}
+
+export interface TableHeadProps {
+  headers: Header[];
+  children: ReactNode;
 }
 
 
