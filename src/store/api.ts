@@ -1,7 +1,7 @@
 import md5 from 'md5'; 
 import { APIParams } from '../types/productsTypes';
 
-const API_URL = '/api/';
+const API_URL = 'http://api.valantis.store:40000/';
 const PASSWORD = 'Valantis';
 
 export const fetchProduct = async ({action, params}: APIParams) => {

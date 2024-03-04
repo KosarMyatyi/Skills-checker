@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/api/:path*",
-      "destination": "http://api.valantis.store:40000/:path*"
-    }
-  ]
-}
