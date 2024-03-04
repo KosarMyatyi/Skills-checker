@@ -16,6 +16,10 @@ const ProductsList = () => {
 
   if (status === "loading") return "Loading..."
 
+  const refreshPage = () => {
+    window.location.reload();
+  };
+
   return (
     <>
       <div className={cls.wrapper}>
@@ -30,8 +34,13 @@ const ProductsList = () => {
               </tr>
             ))}
           </TableHead>
-          : "Товары не найдены"}
-      </div>
+          : <p>Товары не найдены...{" "}
+            <a href="#" onClick={refreshPage}>
+              Вернуться
+            </a>
+          </p>
+        }
+      </div >
     </>
   );
 }
