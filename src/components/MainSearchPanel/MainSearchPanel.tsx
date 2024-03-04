@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import cls from "./MainSearchPanel.module.scss";
 import { AppDispatch, RootState } from "../../store/store";
 import { Field, FieldsParams } from "../../types/productsTypes";
-import { fetchDataProductFields } from "../../store/fetchAsyncThunk ";
+import { fetchDataProductFields } from "../../store/fetchAsyncThunk";
 import { setSearchValue, setSelectedField } from "../../store/productSlice";
 
 const MainSearchPanel = () => {

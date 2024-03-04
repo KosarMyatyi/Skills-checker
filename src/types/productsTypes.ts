@@ -11,7 +11,6 @@ export interface ProductsState {
   products: Product[];
   productsId: string[];
   fields: Field[];
-  filteredProducts: Product[]
   status: null | 'loading' | 'resolved' | 'rejected';
   statusId: null | 'loading' | 'resolved' | 'rejected';
   error: string | null | undefined;

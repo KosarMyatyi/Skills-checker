@@ -1,6 +1,6 @@
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 import { ProductsState } from "../types/productsTypes";
-import { fetchDataProductsId, fetchDataProducts } from "./fetchAsyncThunk ";
+import { fetchDataProductsId, fetchDataProducts } from "./fetchAsyncThunk";
 
 const initialState: ProductsState = {
   productsId: [],
@@ -13,7 +13,6 @@ const initialState: ProductsState = {
   offset: 0,
   limit: 50,
   page: 1,
-  filteredProducts: [],
   selectedField: "product",
   searchValue: "",
   statusId: null,

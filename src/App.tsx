@@ -5,7 +5,7 @@ import ProductsList from "./components/ProductsList/ProductsList";
 import { IdsParams } from "./types/productsTypes";
 import MainSearchPanel from "./components/MainSearchPanel/MainSearchPanel";
 import Pagination from "./components/Pagination/Pagination";
-import { fetchDataProductsId } from "./store/fetchAsyncThunk ";
+import { fetchDataProductsId } from "./store/fetchAsyncThunk";
 import cls from "./index.module.scss"
 
 function App() {
